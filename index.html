@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dentro da tag <head> -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ControlFin</title>
 </head>
+
 <body>
-    <header><h1>Controle Financeiro</h1></header>
+    <section>
+        <header>
+            <nav class="container__nav">
+                <img class="logo" src="assets/raw-removebg-preview2.png" alt="Logo ControlFin">
+                <a href="index.html">Dashboard</a>
+                <a href="fluxo-de-caixa.html">Fluxo de Caixa</a>
+                <a href="lancamento.html">Lançamentos</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="top-panel">
+                <div class="card">
+                    <div class="botoes-resumo">
+                        <button class="receita">Receitas</button>
+                        <button class="despesa">Despesas</button>
+                        <button class="saldo">Saldo Financeiro</button>
+                        <button class="cartao">Gastos com Cartão</button>
+                    </div>
+
+                    <ul class="meses">
+                        <li>Jan</li>
+                        <li>Fev</li>
+                        <li>Mar</li>
+                        <li>Abr</li>
+                        <li>Mai</li>
+                        <li>Jun</li>
+                        <li>Jul</li>
+                        <li>Ago</li>
+                        <li>Set</li>
+                        <li>Out</li>
+                        <li>Nov</li>
+                        <li>Dez</li>
+
+                    </ul>
+                    <!-- Select para ano -->
+                    <div class="ano-select">
+                        <label for="ano">Ano:</label>
+                        <select id="ano" name="ano">
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024" selected>2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campo para o gráfico -->
+            <div class="grafico-container">
+                <canvas id="graficoFinanceiro"></canvas>
+            </div>
+        </main>
+    </section>
 </body>
+
 </html>
