@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container__nav img {
+  width: 150px;
+  height: 45px;
+}
+
+
+.container__nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container__nav > a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ffcb05;
+  color: #1e1e1e;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.container__nav > a:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+
+.top-panel .card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.botoes-resumo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.botoes-resumo button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.receita {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.despesa {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.saldo {
+  background-color: #3498db;
+  color: white;
+}
+
+.cartao {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.botoes-resumo button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.meses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.meses li,
+.meses p {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.meses li:hover,
+.meses p:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.grafico-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#graficoFinanceiro {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.formulario-lancamento {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.formulario-lancamento h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+#form-lancamento {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#form-lancamento label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+#form-lancamento input,
+#form-lancamento select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#form-lancamento button {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#form-lancamento button:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}
+
+.lancamentos-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lancamentos-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filtro-mes {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filtro-mes select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.filtros-lancamentos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtro label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filtro select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+
+.tabela-lancamentos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-lancamentos th,
+.tabela-lancamentos td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.tabela-lancamentos th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.tabela-lancamentos tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabela-lancamentos button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+
+.tabela-lancamentos .editar {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.tabela-lancamentos .excluir {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.ano-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.ano-select label {
+  font-weight: bold;
+  color: #333;
+}
+
+.ano-select select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
