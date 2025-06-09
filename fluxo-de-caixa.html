@@ -28,18 +28,18 @@
             <div class="top-panel">
                 <div class="card">
                     <ul class="meses">
-                        <li>Jan</li>
-                        <li>Fev</li>
-                        <li>Mar</li>
-                        <li>Abr</li>
-                        <li>Mai</li>
-                        <li>Jun</li>
-                        <li>Jul</li>
-                        <li>Ago</li>
-                        <li>Set</li>
-                        <li>Out</li>
-                        <li>Nov</li>
-                        <li>Dez</li>
+                        <li class="mes_tabela">Jan</li>
+                        <li class="mes_tabela">Fev</li>
+                        <li class="mes_tabela">Mar</li>
+                        <li class="mes_tabela">Abr</li>
+                        <li class="mes_tabela">Mai</li>
+                        <li class="mes_tabela">Jun</li>
+                        <li class="mes_tabela">Jul</li>
+                        <li class="mes_tabela">Ago</li>
+                        <li class="mes_tabela">Set</li>
+                        <li class="mes_tabela">Out</li>
+                        <li class="mes_tabela">Nov</li>
+                        <li class="mes_tabela">Dez</li>
                     </ul>
                     <!-- Select para ano -->
                     <div class="ano-select">
@@ -74,7 +74,7 @@
                                 <option value="Outros">Outros</option>
                             </select>
 
-                            <!-- Campo extra escondido -->
+                            
                             <input type="text" id="descricao-outros" name="descricao-outros"
                                 placeholder="Digite a descrição" style="display: none;" />
                             <input type="text" id="descricao-outros" name="descricao-outros"
@@ -99,13 +99,20 @@
                             <th>Mês</th>
                             <th>Ano</th>
                         </tr>
+                        <tr class="container_lista">
+                            <td class="tabela_tipo"></td>
+                            <td class="tabela_descricao"></td>
+                            <td class="tabela_valor"></td>
+                            <td class="tabela_mes"></td>
+                            <td class="tabela_ano"></td>
+                        </tr>
                     </thead>
                     <tbody id="corpo-tabela">
-                        <!-- Lançamentos serão adicionados aqui via JS -->
+                        
                     </tbody>
                 </table>
 
-            <!-- Campo para o gráfico -->
+            
             <div class="grafico-container">
                 <canvas id="graficoFinanceiro"></canvas>
             </div>

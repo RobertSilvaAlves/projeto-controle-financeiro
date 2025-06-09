@@ -112,6 +112,11 @@ section {
   margin-top: 10px;
 }
 
+.meses .mes_tabela.selecionada {
+  background: #a4e982;
+  color: #222;
+}
+
 .meses li,
 .meses p {
   padding: 6px 12px;
